@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <!-- Material Design: https://material.io/tools/icons/?style=baseline -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:padding="@dimen/playing_layout_padding">
+
+        <!-- Reference: https://unsplash.com/photos/kL6poGNsv7c
+             Photo by rawpixel on Unsplash / Music Smoke -->
+        <ImageView
+            android:id="@+id/default_image"
+            style="@style/PlayingImage"
+            android:contentDescription="@string/default_music"
+            android:src="@drawable/music_smoke" />
+
+        <ImageView
+            android:id="@+id/play_button"
+            style="@style/PlayButton"
+            android:contentDescription="@string/play_button"
+            android:src="@drawable/play_arrow_black_48" />
+
+        <ImageView
+            android:id="@+id/fast_forward_button"
+            style="@style/FastForwardButton"
+            android:contentDescription="@string/fast_forward_button"
+            android:src="@drawable/fast_forward_black_48" />
+
+        <ImageView
+            android:id="@+id/rewind_button"
+            style="@style/RewindButton"
+            android:contentDescription="@string/rewind_button"
+            android:src="@drawable/fast_rewind_black_48" />
+
+        <TextView
+            android:id="@+id/playing_song"
+            style="@style/PlayingSong"
+            tools:text="song title" />
+
+        <TextView
+            android:id="@+id/playing_album"
+            style="@style/PlayingAlbum"
+            tools:text="album name" />
+
+        <TextView
+            android:id="@+id/playing_artist"
+            style="@style/PlayingArtist"
+            tools:text="artist name" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            style="@style/SeekBar" />
+
+        <ImageView
+            style="@style/VolumeOff"
+            android:contentDescription="@string/volume_off"
+            android:src="@drawable/volume_off_black_24" />
+
+        <ImageView
+            style="@style/VolumeOn"
+            android:contentDescription="@string/volume_on"
+            android:src="@drawable/volume_up_black_24" />
+    </RelativeLayout>
+</ScrollView>

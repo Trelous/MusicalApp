@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Musical App</string>
+    <string name="play_button">Play Button</string>
+    <string name="playing">Now Playing</string>
+    <string name="default_music">Music Smoke</string>
+    <string name="fast_forward_button">Fast Forward Button</string>
+    <string name="rewind_button">Rewind Button</string>
+    <string name="volume_on">Volume On</string>
+    <string name="volume_off">Volume Off</string>
+</resources>
